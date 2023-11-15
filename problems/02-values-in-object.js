@@ -15,7 +15,11 @@ valuesInObject(foods); // => ["tart", "sour", "sweet"]
 ***********************************************************************/
 
 function valuesInObject(obj) {
-  // Your code here
+  let result = [];
+  for (keys in obj) {
+    result.push(obj[keys]);
+  }
+  return result;
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
